@@ -1,0 +1,39 @@
+.header-section {
+  width: 100%;
+  height: 18.75rem;
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.header-text {
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.875rem;
+  letter-spacing: -0.014375rem;
+  text-align: center;
+}
+
+.white-text-color {
+  color: white;
+}
+
+.header-margin {
+  margin-top: 1.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .header-text {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: -0.017875rem;
+  }
+
+  .header-margin {
+    margin-top: 2.0625rem;
+  }
+}

@@ -6,6 +6,7 @@
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
+  position: relative;
 }
 
 .header-text {
@@ -26,6 +27,12 @@
   margin-bottom: 1.1425rem;
 }
 
+.search-result-section {
+  position: absolute;
+  width: 100%;
+  top: 10.4375rem;
+}
+
 @media screen and (min-width: 768px) {
   .header-section {
     width: 100%;
@@ -42,5 +49,9 @@
   .header-margin {
     margin-top: 2.0625rem;
     margin-bottom: 1.2675rem;
+  }
+
+  .search-result-section {
+    top: 12.5rem;
   }
 }

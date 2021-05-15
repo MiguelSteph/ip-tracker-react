@@ -1,0 +1,28 @@
+.result-section-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+
+  width: 80%;
+  margin: auto;
+  background-color: white;
+
+  box-shadow: 0rem 3.125rem 3.125rem -1.5625rem rgba(0, 0, 0, 0.0983665);
+  border-radius: 0.9375rem;
+
+  padding-top: 1.625rem;
+  padding-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .result-section-wrapper {
+    flex-flow: row wrap;
+
+    justify-content: unset;
+    align-items: center;
+
+    padding-left: 2rem;
+    padding-top: 2.3125rem;
+    padding-bottom: 0.25rem;
+  }
+}

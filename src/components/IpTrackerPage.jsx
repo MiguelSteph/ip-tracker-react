@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../styles/ip-tracker-page.css";
+import Form from "./Form";
 
 class IpTrackerPage extends Component {
   state = {};
@@ -10,6 +11,7 @@ class IpTrackerPage extends Component {
           <h1 className="header-text white-text-color header-margin">
             IP Address Tracker
           </h1>
+          <Form />
         </div>
       </React.Fragment>
     );

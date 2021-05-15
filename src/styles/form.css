@@ -1,0 +1,47 @@
+.input-text-form {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 3.625rem;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+
+.black-bg-color {
+  background-color: black;
+}
+
+.arrow-icon-btn {
+  width: 3.625rem;
+
+  border-width: 0;
+  border-radius: 0rem 0.9375rem 0.9375rem 0rem;
+}
+
+.input-field {
+  flex: 1 0 auto;
+  background-color: white;
+  box-shadow: 0 3.125rem 3.125rem -1.5625rem rgba(0, 0, 0, 0.0983665);
+
+  border-width: 0;
+  border-radius: 0.9375rem 0rem 0rem 0.9375rem;
+}
+
+.input-field-text {
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+.black-gray-text-color {
+  color: #2c2c2c;
+}
+
+@media screen and (min-width: 768px) {
+  .input-text-form {
+    width: 40%;
+  }
+}

@@ -2,9 +2,11 @@ import React, { Component } from "react";
 import "../styles/ip-tracker-page.css";
 import Form from "./Form";
 import SearchResult from "./SearchResult";
+import SearchResultMap from "./SearchResultMap";
 
 class IpTrackerPage extends Component {
   state = {};
+
   render() {
     return (
       <React.Fragment>
@@ -17,7 +19,7 @@ class IpTrackerPage extends Component {
             <SearchResult />
           </div>
         </div>
-        <div className="map"></div>
+        <SearchResultMap />
       </React.Fragment>
     );
   }

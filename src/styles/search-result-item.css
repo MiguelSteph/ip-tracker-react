@@ -45,4 +45,8 @@
     letter-spacing: -0.014375rem;
     text-align: left;
   }
+
+  .no-break {
+    white-space: nowrap;
+  }
 }

@@ -16,7 +16,7 @@
 
 @media screen and (min-width: 768px) {
   .result-section-wrapper {
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
 
     justify-content: unset;
     align-items: center;

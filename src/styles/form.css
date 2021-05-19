@@ -40,6 +40,23 @@
   color: #2c2c2c;
 }
 
+.invalid-input-field {
+  border-width: 0.125rem;
+  border-color: tomato;
+}
+
+.arrow-icon-btn:hover {
+  cursor: pointer;
+}
+
+.arrow-icon-btn:disabled {
+  cursor: not-allowed;
+}
+
+.input-field:focus {
+  outline: none;
+}
+
 @media screen and (min-width: 768px) {
   .input-text-form {
     width: 40%;

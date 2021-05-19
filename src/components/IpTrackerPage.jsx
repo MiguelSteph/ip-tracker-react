@@ -3,13 +3,33 @@ import "../styles/ip-tracker-page.css";
 import Form from "./Form";
 import SearchResult from "./SearchResult";
 import SearchResultMap from "./SearchResultMap";
+import LocationContext from "./contexts/LocationContext";
 
 class IpTrackerPage extends Component {
-  state = {};
+  state = {
+    currentLocation: {},
+  };
+
+  /*
+    ipAddress
+    location
+    timezone
+    isp
+    position => [Longitude, Latitude]
+  */
+
+  setLocation = (newLocation) => {
+    this.setState({ currentLocation: newLocation });
+  };
 
   render() {
     return (
-      <React.Fragment>
+      <LocationContext.Provider
+        value={{
+          data: this.state.currentLocation,
+          setLocation: this.setLocation,
+        }}
+      >
         <div className="header-section">
           <h1 className="header-text white-text-color header-margin">
             IP Address Tracker
@@ -20,7 +40,7 @@ class IpTrackerPage extends Component {
           </div>
         </div>
         <SearchResultMap />
-      </React.Fragment>
+      </LocationContext.Provider>
     );
   }
 }
